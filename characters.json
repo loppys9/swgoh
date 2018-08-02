@@ -1,0 +1,77 @@
+[
+    {
+        "name" : "R2D2",
+        "img" : "r2.png",
+        "speed" : 220,
+        "factions" : ["Galactic Republic", "Rebel", "Resistance", "Droid", "Light Side", "Support"],
+        "attacks" : [
+            {
+                "name" : "Electroshock Prod",
+                "basic" : true,
+                "targets_ally" : false,
+                "affects_ally" : false,
+                "cooldown" : 0,
+                "aoe" : true,
+                "target_buffs" : [ ],
+                "ally_buffs" : [],
+                "target_ally_buffs" : [
+                    {"foresight" : [100, 2]}
+                ],
+                "self_buffs" : [
+                    {"tm_gain" : [100, 40]}
+                ]
+            },
+            {
+                "name" : "Smoke Screen",
+                "basic" : false,
+                "targets_ally" : false,
+                "affects_ally" : false,
+                "cooldown" : 4,
+                "aoe" : true,
+                "target_buffs" : [ ],
+                "ally_buffs" : [
+                    {"stealth" : [100, 2]}
+                ],
+                "target_ally_buffs" : [
+                    {"foresight" : [100, 2]},
+                    {"advantage" : [100, 2]}
+                ],
+                "self_buffs" : []
+            },
+            {
+                "name" : "Improvise",
+                "basic" : false,
+                "targets_ally" : false,
+                "affects_ally" : false,
+                "cooldown" : 4,
+                "aoe" : false,
+                "target_buffs" : [
+                    {"burn" : [100, 2]}
+                ],
+                "ally_buffs" : [],
+                "target_ally_buffs" : [],
+                "self_buffs" : []
+            }
+        ],
+        "abilities" : [
+            {
+                "name" : "Combat Analysis",
+                "allies" : true,
+                "selfs" : false,
+                "leader" : false,
+                "crit_chance" : 10,
+                "accuracy" : 10
+            },
+            {
+                "name" : "Number Crunch",
+                "allies" : true,
+                "selfs" : false,
+                "leader" : false,
+                "protection" : 10,
+                "offense" : 10,
+                "health" : 10,
+                "potency" : 10
+            }
+        ]
+    }
+]
